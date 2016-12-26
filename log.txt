@@ -1,0 +1,24 @@
+Ignoring indexes: https://pypi.python.org/simple/
+URLs to search for versions for Flask in c:\python27\lib\site-packages:
+Skipping link . (from -f); not a file
+Skipping link file:///C:/Users/liuboviLove/Desktop/aesGroup/app.py; unknown archive format: .py
+Skipping link file:///C:/Users/liuboviLove/Desktop/aesGroup/install.py; unknown archive format: .py
+Skipping link file:///C:/Users/liuboviLove/Desktop/aesGroup/mailer.py; unknown archive format: .py
+Skipping link file:///C:/Users/liuboviLove/Desktop/aesGroup/mailer.pyc; unknown archive format: .pyc
+Skipping link file:///C:/Users/liuboviLove/Desktop/aesGroup/templates; not a file
+Skipping link file:///C:/Users/liuboviLove/Desktop/aesGroup/validator.py; unknown archive format: .py
+Skipping link file:///C:/Users/liuboviLove/Desktop/aesGroup/validator.pyc; unknown archive format: .pyc
+Could not find any downloads that satisfy the requirement Flask in c:\python27\lib\site-packages
+Downloading/unpacking Flask
+Cleaning up...
+  Removing temporary dir c:\users\liubov~1\appdata\local\temp\pip_build_liuboviLove...
+No distributions at all found for Flask in c:\python27\lib\site-packages
+Exception information:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\pip\basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "C:\Python27\lib\site-packages\pip\commands\install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "C:\Python27\lib\site-packages\pip\req.py", line 1176, in prepare_files
+    raise not_found
+DistributionNotFound: No distributions at all found for Flask in c:\python27\lib\site-packages
