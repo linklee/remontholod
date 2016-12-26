@@ -57,6 +57,9 @@ def delivery():
 @app.route("/about", methods=['GET'])    
 def about():
     return render_template("about.html")
+@app.route("/remont", methods=['GET'])    
+def remont():
+    return render_template("remont.html")
 
 @app.route("/send-form", methods=['POST'])
 def send_form():
