@@ -66,7 +66,7 @@ def remont():
 def tech():
     return render_template("tech.html")
 
-@app.route("/montazh-demontazh", methods=['GET'])    
+@app.route("/montazh-oborudovaniya", methods=['GET'])    
 def montazh():
     return render_template("montazh.html")
 
