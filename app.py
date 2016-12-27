@@ -79,10 +79,9 @@ def send_form():
     phone = request.form['phone']
     text = request.form['text']
     errors = []
-    print (name + phone)
     if len(errors) <= 0:
-        send_message_self ('name: '+ name + '<br/>' +
-        'Phone/email: ' + phone + '<br/>' + ' comment: ' + text.encode('utf8'))
+        send_message_self ('name: '+ name.encode('utf8') + '<br/>' +
+        'Phone/email: ' + phone.encode('utf8') + '<br/>' + ' comment: ' + text.encode('utf8'))
         return render_template("index.html", success = "true", name = name)
         
 
