@@ -81,8 +81,7 @@ def send_form():
     print (name + phone)
     if len(errors) <= 0:
         send_message_self(urllib.parse.unquote('Имя: ')+ name + '<br/>' +
-        urllib.parse.unquote('Телефон/email: ') + phone + '<br/>' +
-        urllib.parse.unquote('Комментарий: ') + text + '<br/>')
+        urllib.parse.unquote('Телефон/email: ') + phone + '<br/>')
         send_message(email, 'Вы оставили заявку')
         return render_template("index.html", success = "true", name = name)
         
