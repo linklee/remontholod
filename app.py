@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, jsonify, redirect
 from mailer import send_message,send_message_self
 from validator import Validator
 import urllib
+import urllib.parse
 
 
 app = Flask(__name__,
