@@ -63,11 +63,11 @@ def remont():
     return render_template("remont.html")
 
 @app.route("/technicheskoe-obsluzhivanie", methods=['GET'])    
-def remont():
+def tech():
     return render_template("tech.html")
 
 @app.route("/montazh-demontazh", methods=['GET'])    
-def remont():
+def montazh():
     return render_template("montazh.html")
 
 @app.route("/send-form", methods=['POST'])
