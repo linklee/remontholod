@@ -82,7 +82,7 @@ def send_form():
     print (name + phone)
     if len(errors) <= 0:
         send_message_self ('name: '+ name + '<br/>' +
-        'Phone/email: ' + phone + '<br/>' + ' comment: ' + text)
+        'Phone/email: ' + phone + '<br/>' + ' comment: ' + text.encode('utf8'))
         return render_template("index.html", success = "true", name = name)
         
 
