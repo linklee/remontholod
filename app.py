@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, jsonify, redirect
 from mailer import send_message,send_message_self
 from validator import Validator
 import urllib
-import urllib.parse
+from urlparse import urlparse
 
 
 app = Flask(__name__,
@@ -81,8 +81,8 @@ def send_form():
     errors = []
     print (name + phone)
     if len(errors) <= 0:
-        send_message_self(urllib.parse.unquote('Имя: ')+ name + '<br/>' +
-        urllib.parse.unquote('Телефон/email: ') + phone + '<br/>')
+        send_message_self(urlparse.unquote('Имя: ')+ name + '<br/>' +
+        urlparse.unquote('Телефон/email: ') + phone + '<br/>')
         send_message(email, 'Вы оставили заявку')
         return render_template("index.html", success = "true", name = name)
         
