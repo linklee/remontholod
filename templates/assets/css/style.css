@@ -399,3 +399,14 @@ min-width:960px}
 .empty {
 	height:70px;
 }
+.holod-h1 {
+	margin-top: 70px;
+}
+.logos-img {
+	max-width: 200px!important;
+}
+@media screen and (max-width: 700px) {
+	.logos-img, .photo-wrapper{
+		display: none!important
+	}
+}
