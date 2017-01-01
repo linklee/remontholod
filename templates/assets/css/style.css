@@ -456,3 +456,6 @@ min-width:960px}
 .color-333 {
 	color:#333;
 }
+.gmap-block {
+	min-width: 500px;
+}
