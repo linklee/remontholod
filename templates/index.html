@@ -39,11 +39,11 @@
                     <a class="navbar-brand" href="#"><img src="assets/img/logo1.png" width="140" ></a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <span  	style="line-height:60px;">Надежный партнер - качественные решения!</span>
-                    <ul class=" nav navbar-nav navbar-right "  style="padding-top:5px">
+                    <span  	class="slogan-span">>Надежный партнер - качественные решения!</span>
+                    <ul class=" nav navbar-nav navbar-right pt5px"  >
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black">Навигация <span class="caret"></span></a>
-                            <ul class="dropdown-menu" style="right: auto; left: 0;">
+                            <a href="#" class="dropdown-toggle color-black" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >Навигация <span class="caret"></span></a>
+                            <ul class="dropdown-menu dm-main">
                                 <li>
                                     <a href="technicheskoe-obsluzhivanie">Техническое обслуживание</a>
                                 </li>
@@ -88,7 +88,7 @@
                         <li
                         </li>
                         <li class="active">
-                            <a href="#f" style="padding-top:10px">
+                            <a href="#f" class="pt10px">
                             <button class='btn btn-sm btn-primary ' type="button">Заказать звонок</button>
                             </a>
                         </li>
@@ -99,7 +99,7 @@
         </div>
         <!-- ********** WHITE SECTION ********** -->
         <div class="container menu-main" >
-            <div style="min-height:40px"><ol class="breadcrumb  nav-bread ">
+            <div class="mh40px"><ol class="breadcrumb  nav-bread ">
                 <li>
                     <a href=".">Главная</a>
                 </li>
@@ -136,7 +136,6 @@
                 <h2>Торговое и холодильное оборудования</h2>
                 <a target="_blank" href="assets/docs/price.xlsx" class="btn btn-primary btn-sm " data-dismiss="modal"><i class="fa fa-file-excel-o"></i> скачать полный прайс</a>
                 <hr class="aligncenter mb">
-                <p style="display:none" class="text-p centered">У нас собственное производство изделий из ДСП и стекла, металлических изделий + заключены дилерские соглашения с крупными заводами стеллажного, холодильного и другого оборудования.</p>
                 <div class="col-md-4">
                     <a href="stellazhi" title="подробнее">
                         <img src="assets/img/1.png">
@@ -153,7 +152,7 @@
                         <h5>Торговая мебель (Витрины и прилавки)</h5>
                     </a>
                     <p class="text-p">
-                        <b style="color:red">Производим сами! </b>Всегда в наличии на складе. Беремся за нестандартные заказы. Срок исполнения – от 2 рабочих дней!
+                        <b class="red">Производим сами! </b>Всегда в наличии на складе. Беремся за нестандартные заказы. Срок исполнения – от 2 рабочих дней!
                     </p>
                 </div>
                 <!--/col-md-3 -->
@@ -186,42 +185,25 @@
         </div>
         <!--/container -->
     <!-- ********** HEADER SECTION ********** -->
-         <div class="greyback" style="padding:20px;" >
+         <div class="greyback p20px" >
             <div class="row ">
                 <div class="col-md-6 col-md-offset-3  centered">
-                <!--     if key 
-                        <h4> Остались вопросы?</h4>
-                          <p>Если вы не нашли  нужной информации по запросу: <b style="font-size:17px"> {{ key }} </b>, то закажите консультацию специалиста и мы ответим на все ваши вопросы и расскажем о сентябрьских скидках! </p>
-                          <div class="col-md-10 col-md-offset-1  ">
-                            <form role="form" action="send-form" method="post" enctype="plain"> 
-                                <input type="name" name="name" class="subscribe-input" placeholder="Имя" required>
-                                <input type="phone" name="phone" class="subscribe-input" placeholder="Телефон" required>
-                                <input title="Комментарий" name="text" class="subscribe-input" placeholder="Комментарий" value="{{key}}">
-                                <br/>
-                                <button class='btn btn-md btn-primary subscribe-submit' type="submit">Заказать</button>
-                            </form>
-                          </div>
-                     else  -->
-                        <h4>Готовые решения для вашего бизнесса</h4>
-                        <p class="text-p centered">Разработка проектных и инженерных решений</p>
-                        <div class="col-md-10 col-md-offset-1  ">
-                            <form role="form" action="send-form" method="post" enctype="plain"> 
-                                <input type="name" name="name" class="subscribe-input" placeholder="Имя" required>
-                                <input type="phone" name="phone" class="subscribe-input" placeholder="Телефон" required>
-                                <input title="Комментарий" name="text" style="display:none" class="subscribe-input" placeholder="Комментарий" value="без коммента">
-                                <br/>
-                                <button class='btn btn-md btn-primary subscribe-submit' type="submit">Заказать</button>
-                            </form>
-                        </div>
-                   <!--    endif -->
-                    
+                    <h4>Готовые решения для вашего бизнесса</h4>
+                    <p class="text-p centered">Разработка проектных и инженерных решений</p>
+                    <div class="col-md-10 col-md-offset-1  ">
+                        <form role="form" action="send-form" method="post" enctype="plain"> 
+                            <input type="name" name="name" class="subscribe-input" placeholder="Имя" required>
+                            <input type="phone" name="phone" class="subscribe-input" placeholder="Телефон" required>
+                            <input title="Комментарий" name="text" style="display:none" class="subscribe-input" placeholder="Комментарий" value="без коммента">
+                            <br/>
+                            <button class='btn btn-md btn-primary subscribe-submit' type="submit">Заказать</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <!--/row -->
         </div>
         <!-- /.container -->
-
-        
         <div>
             <div class="container">
                 <div class="row mtb centered">
@@ -248,9 +230,9 @@
                     </div>
                     <!--/col-md-3 -->
                     <div class="col-md-3">
-                        <a style="color:black" title = "подробнее" href ="delivery" class="underline-hover">
+                        <a  title = "подробнее" href ="delivery" class="underline-hover color-black">
                             <img src="assets/img/e4.png" width="120px" >
-                            <h5 style="color:#333">4. Доставка и монтаж</h5>
+                            <h5 class="color-333">4. Доставка и монтаж</h5>
                         </a>
                         <p class="text-p">По РФ в самые короткие сроки. По Екатеринбургу – на следующий день!
                          <a  href ="delivery" class="btn btn-primary btn-sm" data-dismiss="modal">Узнать о доставке</a>
@@ -278,7 +260,7 @@
                         <form role="form" action="send-form" method="post" enctype="plain"> 
                             <input type="name" name="name" class="subscribe-input" placeholder="Имя" required>
                             <input type="phone" name="phone" class="subscribe-input" placeholder="Телефон" required>
-                            <input style="display:none" name="text" class="subscribe-input" placeholder="Комментарий">
+                            <input  name="text" class="subscribe-input hidden" placeholder="Комментарий">
                             <br/>
                             <button class='btn btn-md btn-primary subscribe-submit' type="submit">Заказать</button>
                         </form>
@@ -287,7 +269,7 @@
             </div>
             <!--/container -->
         </div>
-                    <div id="googleMap"  style="width:500px;height:380px;margin: 10px auto;" ></div><br/><br/>
+             <div id="googleMap" class="main-map" ></div><br/><br/>
             <script>
             function initialize() {
               var center = new google.maps.LatLng(56.7971989,60.6082458,16.75),

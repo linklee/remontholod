@@ -266,6 +266,7 @@ input {
 	padding-bottom: 50px;
 	padding-top: 50px;
 	margin-top: 25px;
+	width: 100%;
 }
 
 /* White Section Overall Configuration */
@@ -415,4 +416,43 @@ min-width:960px}
 }
 #googleMap {
 	margin-bottom: 30px;
+}
+.main-map {
+	width:500px;height:380px;margin: 10px auto;
+}
+.slogan-span {
+	line-height:60px;
+}
+.dm-main {
+	right: auto; left: 0;
+}
+.pt5px {
+	padding-top:5px;
+}
+.color-black {
+	color:black!important;
+}
+.pt10px {
+	padding-top:10px;
+}
+.mt20px {
+	margin-top:-20px;
+}
+.mt-20px {
+	margin-top: -20px;
+}
+.mt-10px {
+	margin-top: -10px;
+}
+.mh40px {
+	min-height:40px;
+}
+.red {
+	color:red;
+}
+.p20px {
+	padding: 20px;
+}
+.color-333 {
+	color:#333;
 }
