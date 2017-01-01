@@ -410,3 +410,9 @@ min-width:960px}
 		display: none!important
 	}
 }
+.bold {
+	font-weight: 700;
+}
+#googleMap {
+	margin-bottom: 30px;
+}
