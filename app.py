@@ -75,6 +75,10 @@ def tech():
 def montazh():
     return render_template("montazh.html")
 
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory("/static/docs", request.path[1:])
 
 @app.route("/send-form", methods=['POST'])
 def send_form():
