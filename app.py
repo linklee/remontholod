@@ -65,7 +65,7 @@ def about():
 
 @app.route("/remont", methods=['GET'])    
 def remont():
-    return render_template("remont.html")
+    return render_template("/remont/remont_index.html")
 
 @app.route("/technicheskoe-obsluzhivanie", methods=['GET'])    
 def tech():
@@ -82,7 +82,7 @@ def static_from_root():
 @app.route('/sitemap.xml')
 def static_from_root():
     return render_template("assets/docs/sitemap.xml")
-    
+
 @app.route("/send-form", methods=['POST'])
 def send_form():
     name = phone = email = country = text = success = None
