@@ -416,9 +416,14 @@ min-width:960px}
 }
 #googleMap {
 	margin-bottom: 30px;
+	max-width: 100%!important;
+}
+.map-wrap {
+	max-width: 100%;overflow: hidden;
 }
 .main-map {
 	width:500px;height:380px;margin: 10px auto;
+	max-width: 100%;
 }
 .slogan-span {
 	line-height:60px;
