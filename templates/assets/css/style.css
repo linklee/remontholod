@@ -104,12 +104,12 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: #f27242;
+	/*color: #f27242;*/
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color:#e16a3e;
+  /*color:#e16a3e;*/
 }
 
 /* BOOTSTRAP MODIFICATION */
