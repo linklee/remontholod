@@ -76,10 +76,13 @@ def montazh():
     return render_template("montazh.html")
 
 @app.route('/robots.txt')
-@app.route('/sitemap.xml')
 def static_from_root():
     return render_template("assets/docs/robots.txt")
 
+@app.route('/sitemap.xml')
+def static_from_root():
+    return render_template("assets/docs/sitemap.xml")
+    
 @app.route("/send-form", methods=['POST'])
 def send_form():
     name = phone = email = country = text = success = None
