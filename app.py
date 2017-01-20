@@ -78,7 +78,7 @@ def montazh():
 @app.route('/robots.txt')
 @app.route('/sitemap.xml')
 def static_from_root():
-    return send_from_directory("/docs/", request.path[1:])
+    return "fdgdfgdf"
 
 @app.route("/send-form", methods=['POST'])
 def send_form():
