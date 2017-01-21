@@ -65,7 +65,7 @@ def about():
 
 @app.route("/remont", methods=['GET'])    
 def remont():
-    return render_template("/remont/remont_index.html")
+    return render_template("/remont/holod.html")
 
 @app.route("/technicheskoe-obsluzhivanie", methods=['GET'])    
 def tech():
