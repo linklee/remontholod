@@ -592,7 +592,6 @@ i {
 
 .like-table {
     border-bottom: 1px solid #eceeef;
-    
     display: table-row;
 }
 
@@ -601,11 +600,48 @@ i {
 .like-table >span {
     display: table-cell;
     border: 1px solid #eceeef;
-    vertical-align: middle;padding: .75rem;
+    vertical-align: middle;
+    padding: .75rem;
 }
 
 @media screen and (max-width: 1176px) {
     .span-slogan {
         display: none!important;
+    }
+    .like-table >:first-child {
+        font-weight :700;
+    }
+    .like-table :nth-child(2)::after {
+        content: " руб. - демонтаж для ремонта";
+    }
+    .like-table :nth-child(3)::after {
+        content: " руб. - монтаж после ремонта";
+    }
+    .like-table :nth-child(4)::after {
+        content: " руб. - диагностика оборудования";
+    }
+    .like-table :nth-child(5)::after {
+        content: " руб. - простой ремонт";
+    }
+    .like-table :nth-child(6)::after {
+        content: " руб. - сложный ремонт";
+    }
+    .like-table :nth-child(7)::after {
+        content: " руб. - очень сложный ремонт";
+    }
+    .like-table {
+        border-bottom: 1px solid #eceeef;
+        display: block
+    }
+    .like-table > div,
+    .like-table > p,
+    .like-table >span {
+        display: block;
+        border: 1px solid #eceeef;
+        vertical-align: middle;
+        padding: .75rem;
+    }
+    .like-table-header {
+    	display: none;
     }
 }
