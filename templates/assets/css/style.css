@@ -479,3 +479,9 @@ min-width:960px}
 .align-left {
 	text-align: left
 }
+.like-table {
+    
+}
+.like-table > div, .like-table > p {
+	
+}
