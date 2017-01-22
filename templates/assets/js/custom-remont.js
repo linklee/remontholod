@@ -1,6 +1,6 @@
 $(function() {
-    $('.hp-trigger').click(function() {
+    $('.hp-trigger').click(function(e) {
         $('.hidden-price').toggleClass('hidden');
-     	return false;
+     	e.stopPropagation()
     })
 });
