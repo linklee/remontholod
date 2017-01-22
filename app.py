@@ -87,10 +87,6 @@ def static_from_root():
 def remont():
     return render_template("/remont/holod.html")
 
-@app.route("/remont-neitralnogo-oborudovaniya", methods=['GET'])    
-def remont():
-    return render_template("/remont/neutral.html")
-
 @app.route("/send-form", methods=['POST'])
 def send_form():
     name = phone = email = country = text = success = None
