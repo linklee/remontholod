@@ -76,16 +76,20 @@ def montazh():
     return render_template("montazh.html")
 
 @app.route('/robots.txt')
-def static_from_root():
+def robots():
     return render_template("assets/docs/robots.txt")
 
 @app.route('/sitemap.xml')
-def static_from_root():
+def sitemap():
     return render_template("assets/docs/sitemap.xml")
 
 @app.route("/remont-holodilnogo-oborudovaniya", methods=['GET'])    
-def remont():
+def remont_holodilnogo_oborudovaniya():
     return render_template("/remont/holod.html")
+
+@app.route("/remont-neitralnogo-oborudovaniya", methods=['GET'])    
+def remont_neitralnogo_oborudovaniya():
+    return render_template("/remont/neutral.html")
 
 @app.route("/send-form", methods=['POST'])
 def send_form():
