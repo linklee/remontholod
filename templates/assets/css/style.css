@@ -652,3 +652,8 @@ i {
 	margin-bottom: 20px;
 	margin-top: -10px;
 }
+.ul-small {
+    list-style: none;
+}
+.hidden-price {
+}

@@ -91,6 +91,22 @@ def remont_holodilnogo_oborudovaniya():
 def remont_neitralnogo_oborudovaniya():
     return render_template("/remont/neutral.html")
 
+@app.route("/remont-kofemashin", methods=['GET'])    
+def remont_kofemashin():
+    return render_template("/remont/coffee.html")
+
+@app.route("/remont-elektricheskih-plit", methods=['GET'])    
+def remont_elektricheskih_plit():
+    return render_template("/remont/plita.html")
+
+@app.route("/remont-vesov", methods=['GET'])    
+def remont_vesov():
+    return render_template("/remont/vesi.html")
+
+@app.route("/remont-prochego-oborudovaniya", methods=['GET'])    
+def remont_etc():
+    return render_template("/remont/etc.html")
+
 @app.route("/send-form", methods=['POST'])
 def send_form():
     name = phone = email = country = text = success = None
