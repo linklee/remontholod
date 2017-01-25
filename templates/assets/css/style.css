@@ -662,7 +662,7 @@ i {
     font-weight: bold;
 }
 .mgtop {
-    padding-top:30px;
+    padding-top:15px;
 }
 .table-span {
     padding: 8px;
@@ -672,7 +672,7 @@ i {
 .p-row {
      border: 1px solid #ddd!important;
      border-bottom: 0px solid #ddd!important;
-     margin: 0!important;
+     margin: 0px -15px!important;
      border-collapse: collapse
 }
 .p-row-last {
@@ -680,4 +680,7 @@ i {
 }
 .table  .p-row:nth-child(2n) {
     background-color: #f9f9f9;
+}
+.no-list {
+    list-style: none;
 }
