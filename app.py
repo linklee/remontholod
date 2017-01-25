@@ -63,11 +63,22 @@ def delivery():
 def about():
     return render_template("about.html")
 
+#301 redirect
 @app.route("/remont", methods=['GET'])    
+def remont_redirect():
+    return redirect("/remont-oborudovaniya", code=301)
+
+@app.route("/remont-oborudovaniya", methods=['GET'])    
 def remont():
     return render_template("/remont/remont_index.html")
 
+
+#301 redirect
 @app.route("/technicheskoe-obsluzhivanie", methods=['GET'])    
+def tech_redirect():
+    return redirect("/montazh-oborudovaniya", code=301)
+
+@app.route("/technicheskoe-obsluzhivanie-oborudovaniya", methods=['GET'])    
 def tech():
     return render_template("tech.html")
 
@@ -106,6 +117,7 @@ def remont_vesov():
 @app.route("/remont-prochego-oborudovaniya", methods=['GET'])    
 def remont_etc():
     return render_template("/remont/etc.html")
+
 
 @app.route("/send-form", methods=['POST'])
 def send_form():

@@ -467,6 +467,7 @@ i {
 
 .img-remont {
     margin: 30px 0;
+    max-height: 400px;
 }
 
 .price-table {
@@ -605,7 +606,7 @@ i {
 }
 
 @media screen and (max-width: 1176px) {
-    .span-slogan {
+    .slogan-span {
         display: none!important;
     }
     .like-table >:first-child {
@@ -659,4 +660,7 @@ i {
 }
 .bold {
     font-weight: bold;
+}
+.mgtop {
+    padding-top:30px;
 }
