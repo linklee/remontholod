@@ -605,7 +605,7 @@ i {
     padding: .75rem;
 }
 
-@media screen and (max-width: 1176px) {
+@media screen and (max-width: 1185px) {
     .slogan-span {
         display: none!important;
     }
@@ -663,4 +663,21 @@ i {
 }
 .mgtop {
     padding-top:30px;
+}
+.table-span {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+}
+.p-row {
+     border: 1px solid #ddd!important;
+     border-bottom: 0px solid #ddd!important;
+     margin: 0!important;
+     border-collapse: collapse
+}
+.p-row-last {
+    border-bottom: 1px solid #ddd!important;
+}
+.table  .p-row:nth-child(2n) {
+    background-color: #f9f9f9;
 }

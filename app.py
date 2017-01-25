@@ -76,7 +76,7 @@ def remont():
 #301 redirect
 @app.route("/technicheskoe-obsluzhivanie", methods=['GET'])    
 def tech_redirect():
-    return redirect("/montazh-oborudovaniya", code=301)
+    return redirect("/technicheskoe-obsluzhivanie-oborudovaniya", code=301)
 
 @app.route("/technicheskoe-obsluzhivanie-oborudovaniya", methods=['GET'])    
 def tech():
