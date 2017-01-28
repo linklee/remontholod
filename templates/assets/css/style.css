@@ -684,3 +684,6 @@ i {
 .no-list {
     list-style: none;
 }
+a.mgtp {
+    margin-top: 10px;
+}
