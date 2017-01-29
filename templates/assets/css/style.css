@@ -687,3 +687,21 @@ i {
 a.mgtp {
     margin-top: 10px;
 }
+.remont-index h3 {
+    font-size: 18px;
+}
+.remont-index h1{
+    margin-bottom: 50px;
+}
+.h2-remont-index-2  {
+    margin-top:50px;
+}
+h3.inline {
+    display: inline-block; 
+    margin-right: 10px;
+
+}
+.ul-dotted {
+    list-style: disc;
+    margin-left: 40px;
+}
