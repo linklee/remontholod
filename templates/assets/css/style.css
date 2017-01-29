@@ -705,3 +705,10 @@ h3.inline {
     list-style: disc;
     margin-left: 40px;
 }
+
+.align-left {
+    text-align: left;
+}
+.red17px {
+    font-size:17px;color:red
+}
