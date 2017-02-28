@@ -653,9 +653,7 @@ i {
 	margin-bottom: 20px;
 	margin-top: -10px;
 }
-.ul-small {
-    list-style: none;
-}
+
 .hidden-price {
 }
 .bold {
@@ -705,7 +703,9 @@ h3.inline {
     list-style: disc;
     margin-left: 40px;
 }
-
+.ul-small {
+    list-style: none;
+}
 .align-left {
     text-align: left;
 }
