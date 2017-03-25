@@ -285,19 +285,19 @@
 <script>
     function initialize() {
         var center = new google.maps.LatLng(56.7971989, 60.6082458, 16.75),
-                mapProp = {
-                    center: center,
-                    zoom: 15,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    scrollwheel: false
-                };
+            mapProp = {
+                center: center,
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false
+            };
         var map = new google.maps.Map(document.getElementById("googleMap"), mapProp),
-                marker = new google.maps.Marker({
-                    position: center,
-                }),
-                infowindow = new google.maps.InfoWindow({
-                    content: "ул. 8 марта, 204г "
-                });
+            marker = new google.maps.Marker({
+                position: center,
+            }),
+            infowindow = new google.maps.InfoWindow({
+                content: "ул. 8 марта, 204г "
+            });
 
         infowindow.open(map, marker);
 
@@ -317,25 +317,26 @@
 </div>
 <!--/footer -->
 {% if success %}
-<div class="modal" id="success-modal" role="dialog" data-show="true" style="display:block">
-    <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" onclick="$('.modal').hide()">&times;</button>
-                <h4 class="modal-title">Заявка отправлена</h4>
-            </div>
-            <div class="modal-body">
-                <p>{{ name }}, мы получили вашу заявку и свяжемся с вами в ближайшее время!</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="$('.modal').hide()">
-                    Закрыть
-                </button>
+    <div class="modal" id="success-modal" role="dialog" data-show="true" style="display:block">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            onclick="$('.modal').hide()">&times;</button>
+                    <h4 class="modal-title">Заявка отправлена</h4>
+                </div>
+                <div class="modal-body">
+                    <p>{{ name }}, мы получили вашу заявку и свяжемся с вами в ближайшее время!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="$('.modal').hide()">
+                        Закрыть
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 {% endif %}
 <!-- Bootstrap core JavaScript
     ================================================== -->

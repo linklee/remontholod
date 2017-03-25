@@ -1,0 +1,18 @@
+<a href="/">Главная</a> / Все страницы
+<br><br>
+
+<div class="manage">
+    <ul class="entries">
+        {% for page in pages %}
+            <li><a href="/change_page?action=edit_page&page=1">{{ page.url }} </a> {{ page.title }} - <a
+                    href="{{ page.url }} " target="_blank"> показать на сайте</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<style>
+    li {
+        line-height: 30px;
+    }
+</style>

@@ -1,0 +1,34 @@
+<title>{{ page.title }} - редактировать </title>
+
+
+<a href="/">Главная</a> / <a href="/pages?action=edit">Все страницы</a> / Редактирование страницы
+<br><br>
+<a href="{{ page.url }} " target="_blank"> показать на сайте</a>
+<b>{{ page.id }} - {{ page.url }}</b>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <br><br>{{ message }}<br><br>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<div class="manage-wrap" style="width:80%">
+
+    <br> <br>
+    <form role="form" action="save_changes?page={{ page.id }}" method="post" enctype="plain">
+        <input style="width:100%" name="title" class="" placeholder="Title" required value="{{ page.title }}"/>
+        <br><br>
+        <textarea style="width:100%;min-height: 900px" name="text" class="" placeholder="Текст страницы"
+                  required>{{ page.text }}</textarea>
+        <br/><br/>
+        <button class='btn btn-md btn-primary subscribe-submit' type="submit">Отправить</button>
+    </form>
+
+</div>
+<script src="https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('te1xt', {
+        height: 500
+    });
+</script>
