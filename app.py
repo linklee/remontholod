@@ -219,7 +219,6 @@ def save_changes():
     db.execute(query)
     db.commit()
     redirect_url = '/change_page?action=edit_page&page=' + page_id
-    #flash('Изменения сохранены')
 
     return redirect(redirect_url)
 
