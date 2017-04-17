@@ -216,7 +216,6 @@ def save_changes():
     print('xxx')
     query = "UPDATE pages SET title ='" + request.form['title'] + "', text ='" + request.form['text'] + "' WHERE id = " + page_id
     #query = 'UPDATE pages SET title = ?, text = ? WHERE id = ?',request.form['title'], request.form['text'], page_id
-    #print( u''.join(query))
     db.execute(query)
     db.commit()
     redirect_url = '/change_page?action=edit_page&page=' + page_id
