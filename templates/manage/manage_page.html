@@ -5,13 +5,13 @@
 <br><br>
 <a href="{{ page.url }} " target="_blank"> показать на сайте</a>
 <b>{{ page.id }} - {{ page.url }}</b>
-{% with messages = get_flashed_messages() %}
-    {% if messages %}
-        {% for message in messages %}
+<!-- { with messages = get_flashed_messages() %}
+    { if messages %}
+        { for message in messages %}
             <br><br>{{ message }}<br><br>
         {% endfor %}
-    {% endif %}
-{% endwith %}
+    { endif %}
+{ endwith %} -->
 
 <div class="manage-wrap" style="width:80%">
 
