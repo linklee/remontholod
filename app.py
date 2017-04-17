@@ -1,5 +1,5 @@
 ﻿# -*- coding: utf-8 -*-
-from flask import Flask, render_template, request, jsonify, redirect, g, flash
+from flask import Flask, render_template, request, jsonify, redirect, g
 from mailer import send_message, send_message_self
 from validator import Validator
 import urllib
@@ -219,7 +219,6 @@ def save_changes():
     db.execute(query)
     db.commit()
     redirect_url = '/change_page?action=edit_page&page=' + page_id
-
     return redirect(redirect_url)
 
 
