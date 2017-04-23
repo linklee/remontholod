@@ -77,12 +77,19 @@ def index_link(link):
 
 @app.route("/stellazhi", methods=['GET'])
 def stellazhi():
-    return render_template("stellazhi.html")
+    db = get_db()
+    cur = db.execute("SELECT id, title, text FROM pages WHERE id = 2 ") #url = 'stellazhi'
+    pages = cur.fetchall()
+    return render_template("stellazhi.html", page=pages[0])
 
 
 @app.route("/torg-mebel", methods=['GET'])
 def torg_mebel():
-    return render_template("torg-mebel.html")
+    db = get_db()
+    cur = db.execute("SELECT id, title, text FROM pages WHERE id = 3")  # url = 'torg-mebel'
+    pages = cur.fetchall()
+
+    return render_template("torg-mebel.html", page=pages[0])
 
 
 @app.route("/telezhki-korzini", methods=['GET'])
@@ -97,7 +104,10 @@ def kass_boxes():
 
 @app.route("/holod-oborudovanie", methods=['GET'])
 def holod_oborudovanie():
-    return render_template("holod-oborudovanie.html")
+    db = get_db()
+    cur = db.execute("SELECT id, title, text FROM pages WHERE id = 4 ")  # url = 'holod-oborudovanie'
+    pages = cur.fetchall()
+    return render_template("holod-oborudovanie.html", page=pages[0])
 
 
 @app.route("/delivery", methods=['GET'])

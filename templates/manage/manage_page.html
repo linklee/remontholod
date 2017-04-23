@@ -10,6 +10,7 @@
 
     <br> <br>
     <form role="form" action="save_changes?page={{ page.id }}" method="post" enctype="plain">
+        <h4>Title:</h4>
         <input style="width:100%" name="title" class="" placeholder="Title" required value="{{ page.title }}"/>
         <br><br>
         <textarea style="width:100%;min-height: 900px" name="text" class="" placeholder="Текст страницы"

@@ -4,7 +4,7 @@
 <div class="manage">
     <ul class="entries">
         {% for page in pages %}
-            <li><a href="/change_page?action=edit_page&page=1">{{ page.url }} </a> {{ page.title }} - <a
+            <li><a href="/change_page?action=edit_page&page={{ page.id }}">{{ page.url }} </a> {{ page.title }} - <a
                     href="{{ page.url }} " target="_blank"> показать на сайте</a>
             </li>
         {% endfor %}
