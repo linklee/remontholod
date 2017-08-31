@@ -10,8 +10,7 @@ import os
 smtp = 'smtp.gmail.com'
 smtp_port = 587
 login = 'nevernight721'
-password = '9022774183'
-
+password = '9022774182'
 
 def send_mail(_from, _to, subject, html, file=None, path=None):
     if _from is None or _to is None or subject is None or html is None:
