@@ -770,8 +770,15 @@ h3.inline {
     .page-safe-wrap.holod {
         margin-left: 95px;
     }
+    .left-with-picture {
+        padding-top: 70px;
+    }
 }
-
+@media screen and (min-width: 1000px) {
+    .left-with-picture {
+        padding-top: 70px;
+    }
+}
 
 .holod-remont > div {
     font-weight: 400;
