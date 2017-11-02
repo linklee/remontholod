@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="Оперативный ремонт холодильного оборудования. Качественно и надежно. Самые низкие цены на рынке. Убедитесь сами.">
     <meta name="author" content="">
     <link rel="icon" href="../assets/img/favicon.ico">
     <title>{{page.title}}</title>
@@ -83,7 +83,9 @@
                 </li>
                 <li>
                     <a class="c42" href="#">
-                        <i class="fa fa-phone "></i> 8 (343) 3448090
+                        <i class="fa fa-phone "></i>
+                        <!--8 (343) 3448090-->
+                        8 (992) 3340154
                     </a>
                 </li>
                 <li>
@@ -123,20 +125,24 @@
 
    <div>
       <img alt="Ремонт холодильного оборудования в Екатеринбурге" class="img-responsive" src="https://pp.userapi.com/c639416/v639416314/154d9/hT1LZtGxoqs.jpg" />
+      <p>Осуществляем профилактические мероприятия, ремонт и обслуживание холодильного оборудования.</p>
+      <a class="btn btn-danger show-prices" href="#prices">Цены на ремонт оборудования</a>
    </div>
-    <div>
-        <h2>Цены на ремонт оборудования.</h2>
-        {% include "remont/holod_price.html" %}
-    </div>
     <!--bread-->
     {{ page.text|safe }}
+    <a class="btn btn-danger show-prices" href="#">Посмотреть цены на ремонт оборудования</a>
+
+     <div class="hidden hidden-price">
+        <h3>Наши цены</h3>
+        {% include "remont/holod_price.html" %}
+    </div>
 
 </div>
 <!--container-->
 <div class="greyback" id="f">
     <div class="row">
         <div class="col-md-6 col-md-offset-3  centered">
-            <h2 class="app-h">Оставьте заявку</h2>
+            <h4 class="app-h">Оставьте заявку</h4>
             <div class="col-md-10 col-md-offset-1">
                 <form role="form" action="send-form" method="post" enctype="plain">
                     <input type="name" name="name" class="subscribe-input" placeholder="Имя" required>
@@ -153,14 +159,25 @@
 </div>
 <!--/greyback -->
 <footer class="footer-remont">
-    <p class="text-p centered mt">Наш адрес: г. Екатеринбург, ул. Монтерская, 3 оф. 113 &nbsp Телефон: 8 (343) 3448090
-        &nbsp &copy; ОПТИМА ГРУПП</p>
+    <p class="text-p centered mt">Наш адрес: г. Екатеринбург, ул. Монтерская, 3 оф. 113 &nbsp Телефон:
+    <!--8 (343) 3448090-->
+    8 (992) 3340154
+ &nbsp &copy; ОПТИМА ГРУПП</p>
 </footer>
 </body>
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
 <script src="../assets/js/retina-1.1.0.js"></script>
+<script>
+    $(function() {
+    $('.show-prices').click(function(event) {
+	    event.preventDefault();
+        $('.hidden-price').toggleClass('hidden');
+        $('html,body').animate({scrollTop:$('#prices').offset().top + 50}, 1000);
+    })
+});
+</script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {

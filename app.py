@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from flask import Flask, render_template, request, jsonify, redirect, g
 from mailer import send_message, send_message_self
 from validator import Validator
@@ -18,7 +18,12 @@ app = Flask(__name__,
             template_folder='templates',
             instance_path=None,
             instance_relative_config=False)
-app.debug = True
+app.debug = False
+
+# #404 page
+# @app.errorhandler(500)
+# def page_not_found(e):
+#     return jsonify("{'x':'5'}")
 
 # Load default config and override config from an environment variable
 app.config.update(dict(
@@ -248,7 +253,8 @@ def send_form():
     return jsonify(success=False, errors=errors)
 
 
+
 if __name__ == "__main__":
     app.secret_key = 'super secret key'
     app.config['SESSION_TYPE'] = 'filesystem'
-    app.run(debug=True)
+    app.run(debug=False)

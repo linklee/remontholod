@@ -789,3 +789,14 @@ h3.inline {
     font-weight: 700!important;
     font-size: 16px;
 }
+
+.img-central {
+    margin: 0 auto;
+}
+
+
+.img-master {
+    margin-top: 14px;
+    margin-bottom:10px;
+}
+
