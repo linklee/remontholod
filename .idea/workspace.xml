@@ -184,8 +184,8 @@
     <replaceStrings>
       <replace />
       <replace>optimagp.ru</replace>
-      <replace>г. Екатеринбург, ул. Монтерская, 3 оф. 113</replace>
-      <replace>ул. Монтерская, 3 оф. 113</replace>
+      <replace>г. Екатеринбург, ул. Мамина Сибиряка, д. 101 оф. 113</replace>
+      <replace>ул. Мамина Сибиряка, д. 101 оф. 113</replace>
       <replace>span</replace>
       <replace>div</replace>
     </replaceStrings>
