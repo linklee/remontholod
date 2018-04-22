@@ -176,6 +176,9 @@ def remont_holodilnogo_oborudovaniya():
 def remont_neitralnogo_oborudovaniya():
     return render_template("/remont/neutral.html")
 
+@app.route("/remont-holodilnikov-na-domu-nedorogo-v-ekb", methods=['GET'])
+def remont_dom():
+    return render_template("/remont/home_holod.html")
 
 @app.route("/remont-kofemashin", methods=['GET'])
 def remont_kofemashin():

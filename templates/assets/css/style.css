@@ -803,3 +803,7 @@ h3.inline {
     max-height: 500px;
 }
 
+.remont_dom_btn {
+    color:white!important;
+    text-decoration:none!important;
+}
